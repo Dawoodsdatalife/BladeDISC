@@ -1069,7 +1069,7 @@ void emitInitLoops(OpBuilder& b, ArrayRef<Operation*> col_reduction_ops) {
   Location loc = first_root->getLoc();
   Value zero = b.create<arith::ConstantIndexOp>(loc, 0);
   Value one = b.create<arith::ConstantIndexOp>(loc, 1);
-  Value two = b.create<arith::ConstantIndexOp>(loc, 1);
+  Value two = b.create<arith::ConstantIndexOp>(loc, 2);
   Value num_elements = emitNumElementsComputation(b, loc, first_root);
 
   Value var;
